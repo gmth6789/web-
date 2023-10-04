@@ -1,0 +1,166 @@
+* {
+  padding: 0;
+  margin: 0
+}
+
+body {
+  font-family: Open Sans,-apple-system,BlinkMacSystemFont,Helvetica Neue,Helvetica,Segoe UI,Arial,Roboto,PingFang SC,miui,Hiragino Sans GB,Microsoft Yahei,sans-serif!important
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100vh
+}
+
+.container .appbar {
+  @include border-1px(#eeeeee, bottom);height: 12.53333vw;
+  box-shadow: 1px .53333vw .8vw #eee
+}
+
+.container .content {
+  flex: 1;
+  overflow: auto
+}
+
+a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,main,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline
+}
+
+article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section {
+  display: block
+}
+
+[hidden] {
+  display: none
+}
+
+body {
+  line-height: 1
+}
+
+menu,ol,ul {
+  list-style: none
+}
+
+blockquote,q {
+  quotes: none
+}
+
+blockquote:after,blockquote:before,q:after,q:before {
+  content: "";
+  content: none
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+.wx-flex {
+  display: flex
+}
+
+.wx-flex-auto {
+  flex: 1
+}
+
+.wx-flex-sb {
+  justify-content: space-between
+}
+
+.wx-flex-column {
+  flex-direction: column
+}
+
+.identicon {
+  padding: 1.33333vw;
+  background: #eee;
+  display: inline-block
+}
+
+.identicon:after {
+  content: "";
+  clear: both;
+  display: block
+}
+
+.identicon div {
+  height: 1.33333vw;
+  background: #eee;
+  width: 1.33333vw;
+  float: left
+}
+
+.identicon div:nth-child(5n+1) {
+  clear: both
+}
+
+.identicon div[data="1"] {
+  background: red
+}
+
+.identicon div[data="0"] {
+  background: #eee!important
+}
+
+.popover-action {
+  background-color: #4a4a4a;
+  color: #fff;
+  font-size: 3.73333vw;
+  padding: 1.6vw 2.66667vw;
+  display: flex
+}
+
+.popover-action .line {
+  color: #fff;
+  margin: 0 3.2vw
+}
+
+.my-button {
+  display: inline-block;
+  background-color: #85a5ff;
+  text-align: center;
+  line-height: 1;
+  border-radius: .53333vw;
+  font-size: 3.73333vw;
+  padding: 2.66667vw
+}
+
+.my-button.large {
+  width: 100%
+}
+
+.my-tab .van-tabs__nav--line.van-tabs__nav--complete {
+  padding-left: 0!important
+}
+
+.my-tab .van-tabs__wrap--scrollable .van-tab {
+  padding: 0;
+  margin-right: 3.2vw
+}
+
+.my-tab .van-tab.van-tab--active {
+  font-weight: 600;
+  font-size: 4.26667vw
+}
+
+.my-tab .van-tab {
+  flex: none
+}
+
+.my-tab .van-tabs__line {
+  width: 5.33333vw
+}
+
+@font-face {
+  font-family: webfont;
+  font-display: swap;
+  src: url(//at.alicdn.com/t/webfont_0s1hsowvfvv.eot);
+  src: url(//at.alicdn.com/t/webfont_0s1hsowvfvv.eot#iefix) format("embedded-opentype"),url(//at.alicdn.com/t/webfont_0s1hsowvfvv.woff2) format("woff2"),url(//at.alicdn.com/t/webfont_0s1hsowvfvv.woff) format("woff"),url(//at.alicdn.com/t/webfont_0s1hsowvfvv.ttf) format("truetype"),url(//at.alicdn.com/t/webfont_0s1hsowvfvv.svg#Alibaba-PuHuiTi-Bold) format("svg")
+}
